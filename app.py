@@ -172,6 +172,6 @@ with gr.Blocks(title="RAGbot") as demo:
 
 if __name__ == "__main__":
     print("Starting ChatGPT Style RAGbot...")
-    # This is the MAGIC LINE that makes it work on Render
+    
     port = int(os.environ.get("PORT", 7860)) 
     demo.launch(server_name="0.0.0.0", server_port=port, theme=base_theme, css=chatgpt_css)
